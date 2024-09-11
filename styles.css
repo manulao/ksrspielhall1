@@ -1,0 +1,33 @@
+/* Estilos del mapa */
+#mapa {
+    width: 600px;
+    height: 400px;
+    background-image: url('ruta-de-tu-imagen.jpg'); /* Aquí pones la ruta de tu imagen de mapa */
+    background-size: cover;
+    position: relative;
+}
+
+/* Estilos para el pop-up */
+#popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border: 1px solid black;
+    z-index: 10;
+}
+
+/* Fondo oscuro cuando el pop-up esté visible */
+#overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 9;
+}
