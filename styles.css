@@ -9,9 +9,9 @@
     padding: 30px; /* Aumentamos el padding para dar más espacio interno */
     border: 2px solid black;
     z-index: 10;
-    width: 300px; /* Ancho del cuadro de mensaje */
+    width: 800px; /* Ancho del cuadro de mensaje */
     height: auto; /* Altura automática según el contenido */
-    font-size: 18px; /* Tamaño del texto en el pop-up */
+    font-size: 40px; /* Tamaño del texto en el pop-up */
     text-align: center; /* Opcional: alinear el texto en el centro */
 }
 
