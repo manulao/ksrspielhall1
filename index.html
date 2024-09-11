@@ -37,7 +37,7 @@
 				color:blue;
 				text-decoration: underline;
 			}
-		<!-- Estilos para el pop-up -->
+		/* Estilos para el pop-up */
         	#popup {
             	display: none;
             	position: fixed;
@@ -50,7 +50,7 @@
             	z-index: 10;
         	}
 
-        	<!-- Fondo oscuro cuando el pop-up esté visible -->
+        	/* Fondo oscuro cuando el pop-up esté visible */
         	#overlay {
             	display: none;
             	position: fixed;
@@ -66,15 +66,15 @@
 	<script type="text/javascript" src="jquery.imagemapster.min.js"></script>
 	<script type="text/javascript">
 				$(document).ready(function() {
-			$('img').mapster({
+				$('img').mapster({
 				fillOpacity: 0.5,
 				render_highlight: {
 					fillColor: 'f7eed7',
 					stroke: true,
 					strokeColor: 'f7eed7'
 				},
-								clickNavigate: true,
-								fadeInterval: 50,
+				clickNavigate: true,
+				fadeInterval: 50,
 				showToolTip: true,
 				onClick: function (e) {
 					$('#coordinateslabel').hide();
