@@ -37,30 +37,6 @@
 				color:blue;
 				text-decoration: underline;
 			}
-		/* Estilos para el pop-up */
-        	#popup {
-            	display: none;
-            	position: fixed;
-            	top: 50%;
-            	left: 50%;
-            	transform: translate(-50%, -50%);
-            	background-color: white;
-            	padding: 20px;
-            	border: 1px solid black;
-            	z-index: 10;
-        	}
-
-        	/* Fondo oscuro cuando el pop-up esté visible */
-        	#overlay {
-            	display: none;
-            	position: fixed;
-            	top: 0;
-            	left: 0;
-            	width: 100%;
-            	height: 100%;
-            	background-color: rgba(0, 0, 0, 0.7);
-            	z-index: 9;
-        	}
 	</style>
 	<script type="text/javascript" src="jquery.min.js"></script>
 	<script type="text/javascript" src="jquery.imagemapster.min.js"></script>
@@ -102,9 +78,9 @@
 					{key: 'game-141', selected: false, isSelectable: false, isDeselectable: false, toolTip: '<b>Hall 6</b>'}
 					,
 					]
+				});
 			});
-					});
-				var width = 3425;
+		var width = 3425;
 		var height = 2412;
 		var multiplier = 2;
 		function smaller(){
@@ -127,30 +103,20 @@
 			}, 500, function() {});
 			$('img').mapster('resize',width,height,500);
 		}
+	</script>
+</head>
+	<body style="text-align:center;background-color:#eff0f2;font:12px Verdana;">
+		
+		<div id="container" style="max-width:100%; height:auto; margin:15px auto 15px auto;">
 		<!-- Pop-up -->
     		<div id="overlay" onclick="ocultarPopup()"></div>
     		<div id="popup">
         		<span id="popup-texto"></span>
-    		</div>
-			<!-- Función para mostrar el pop-up con el texto correspondiente -->
-        		function mostrarPopup(texto) {
-            		document.getElementById('popup-texto').textContent = texto;
-            		document.getElementById('popup').style.display = 'block';
-            		document.getElementById('overlay').style.display = 'block';
-        		}
-
-        		<!-- Función para ocultar el pop-up-->
-        		function ocultarPopup() {
-            		document.getElementById('popup').style.display = 'none';
-            		document.getElementById('overlay').style.display = 'none';
-        		}
-		
-	</script>
-</head>
-	<body style="text-align:center;background-color:#eff0f2;font:12px Verdana;">
-					<p style="font-size:20px;"></p>
-			<div id="container" style="max-width:100%; height:auto; margin:15px auto 15px auto;">
-				<img id="picture" src="1.png" id="picture" width="3425" style="border:1px solid blue;" usemap="#map"/>
+    		</div>		
+		<script src="scripts.js"></script>
+			
+			<p style="font-size:20px;"></p>
+			<img id="picture" src="1.png" id="picture" width="3425" style="border:1px solid blue;" usemap="#map"/>
 				<map name="map" id="map">	
 					<area alt="Micro Art Studio" title="Micro Art Studio" href="https://www.kickstarter.com/profile/microartstudio/created" coords="1006,399,1098,491" shape="rect">
 					<area alt="De Tinnen Roos" title="De Tinnen Roos" href="https://www.kickstarter.com/projects/247917105/twisting-chess-chess-with-a-twist" coords="407,249,480,395" shape="rect">
