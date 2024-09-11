@@ -1,10 +1,10 @@
 /* Estilos para el pop-up centrado dentro del mapa */
 #popup {
     display: none;
-    position: absolute; /* Posiciona el pop-up relativo al contenedor del mapa */
+    position: fixed; /* Posiciona el pop-up fijo en la pantalla */
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%); /* Centramos el pop-up */
+    transform: translate(-50%, -50%); /* Centrado en la pantalla */
     background-color: white;
     padding: 30px; /* Aumentamos el padding para dar más espacio interno */
     border: 2px solid black;
