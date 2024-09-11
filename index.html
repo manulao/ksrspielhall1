@@ -37,7 +37,7 @@
 				color:blue;
 				text-decoration: underline;
 			}
-		/* Estilos para el pop-up */
+		<!-- Estilos para el pop-up -->
         	#popup {
             	display: none;
             	position: fixed;
@@ -50,7 +50,7 @@
             	z-index: 10;
         	}
 
-        	/* Fondo oscuro cuando el pop-up esté visible */
+        	<!-- Fondo oscuro cuando el pop-up esté visible -->
         	#overlay {
             	display: none;
             	position: fixed;
@@ -137,14 +137,14 @@
 </head>
 	<body style="text-align:center;background-color:#eff0f2;font:12px Verdana;">
 					<p style="font-size:20px;"></p>
-		// Función para mostrar el pop-up con el texto correspondiente
+		<!-- Función para mostrar el pop-up con el texto correspondiente -->
         	function mostrarPopup(texto) {
             	document.getElementById('popup-texto').textContent = texto;
             	document.getElementById('popup').style.display = 'block';
             	document.getElementById('overlay').style.display = 'block';
         	}
 
-        	// Función para ocultar el pop-up
+        	<!-- Función para ocultar el pop-up-->
         	function ocultarPopup() {
             	document.getElementById('popup').style.display = 'none';
             	document.getElementById('overlay').style.display = 'none';
