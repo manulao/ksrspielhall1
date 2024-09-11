@@ -6,9 +6,13 @@
     left: 50%;
     transform: translate(-50%, -50%); /* Centramos el pop-up */
     background-color: white;
-    padding: 20px;
-    border: 1px solid black;
+    padding: 30px; /* Aumentamos el padding para dar más espacio interno */
+    border: 2px solid black;
     z-index: 10;
+    width: 300px; /* Ancho del cuadro de mensaje */
+    height: auto; /* Altura automática según el contenido */
+    font-size: 18px; /* Tamaño del texto en el pop-up */
+    text-align: center; /* Opcional: alinear el texto en el centro */
 }
 
 /* Fondo oscuro cuando el pop-up esté visible dentro del mapa */
