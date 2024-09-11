@@ -132,23 +132,23 @@
     		<div id="popup">
         		<span id="popup-texto"></span>
     		</div>
+			<!-- Función para mostrar el pop-up con el texto correspondiente -->
+        		function mostrarPopup(texto) {
+            		document.getElementById('popup-texto').textContent = texto;
+            		document.getElementById('popup').style.display = 'block';
+            		document.getElementById('overlay').style.display = 'block';
+        		}
+
+        		<!-- Función para ocultar el pop-up-->
+        		function ocultarPopup() {
+            		document.getElementById('popup').style.display = 'none';
+            		document.getElementById('overlay').style.display = 'none';
+        		}
 		
-			</script>
+	</script>
 </head>
 	<body style="text-align:center;background-color:#eff0f2;font:12px Verdana;">
 					<p style="font-size:20px;"></p>
-		<!-- Función para mostrar el pop-up con el texto correspondiente -->
-        	function mostrarPopup(texto) {
-            	document.getElementById('popup-texto').textContent = texto;
-            	document.getElementById('popup').style.display = 'block';
-            	document.getElementById('overlay').style.display = 'block';
-        	}
-
-        	<!-- Función para ocultar el pop-up-->
-        	function ocultarPopup() {
-            	document.getElementById('popup').style.display = 'none';
-            	document.getElementById('overlay').style.display = 'none';
-        	}
 			<div id="container" style="max-width:100%; height:auto; margin:15px auto 15px auto;">
 				<img id="picture" src="1.png" id="picture" width="3425" style="border:1px solid blue;" usemap="#map"/>
 				<map name="map" id="map">	
